@@ -1,0 +1,84 @@
+[
+    {
+        "id": "6905f32d.d234fc",
+        "type": "tab",
+        "label": "Flow 7",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "b04df5e1.d2aa18",
+        "type": "inject",
+        "z": "6905f32d.d234fc",
+        "name": "",
+        "topic": "",
+        "payload": ",,25.5",
+        "payloadType": "str",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 110,
+        "y": 140,
+        "wires": [
+            [
+                "a9cb7140.dbc06"
+            ]
+        ]
+    },
+    {
+        "id": "8ff624ad.eca7a8",
+        "type": "inject",
+        "z": "6905f32d.d234fc",
+        "name": "",
+        "topic": "",
+        "payload": ",,20.3",
+        "payloadType": "str",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 110,
+        "y": 260,
+        "wires": [
+            [
+                "a9cb7140.dbc06"
+            ]
+        ]
+    },
+    {
+        "id": "a9cb7140.dbc06",
+        "type": "mqtt out",
+        "z": "6905f32d.d234fc",
+        "name": "",
+        "topic": "mcs/DtuolCRG/Nb4jPQ9jvwmYz6gF/Temperature",
+        "qos": "",
+        "retain": "",
+        "broker": "43f10ab3.372394",
+        "x": 580,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "43f10ab3.372394",
+        "type": "mqtt-broker",
+        "z": "",
+        "name": "",
+        "broker": "mqtt.mcs.mediatek.com",
+        "port": "1883",
+        "clientid": "",
+        "usetls": false,
+        "compatmode": true,
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": ""
+    }
+]
